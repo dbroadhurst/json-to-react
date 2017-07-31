@@ -15,7 +15,7 @@ npm install json-to-react
 import jsonToReact from 'json-to-react'
 
 ````
-<div className="App">
+<div>
   {jsonToReact(json)}
 </div>
 ````
@@ -39,7 +39,7 @@ const styles = {
   }
 }
 
-<div className="App">
+<div>
   {jsonToReact(json, styles)}
 </div>
 ````
