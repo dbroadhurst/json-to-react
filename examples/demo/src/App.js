@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import jsonToReact from 'json-to-react'
+import JsonToReact from 'json-to-react'
 
 let json = {
   myValue: 'json-to-react',
@@ -27,9 +27,9 @@ let json = {
   ]
 }
 
-const styles = {
+const jsonStyles = {
   value: {
-    color: 'rgb(0,255,0)'
+    color: 'rgb(0,255,255)'
   },
   key: {
     color: 'rgb(255,255,255)'
@@ -47,7 +47,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {jsonToReact(json, styles)}
+        <JsonToReact
+          json={json}
+          jsonStyle={jsonStyles}
+        />
       </div>
     );
   }

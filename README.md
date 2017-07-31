@@ -6,7 +6,7 @@ Json to React was development to display json using react. The advantage over JS
 
 ## Getting Started
 
-````
+````shell
 npm install json-to-react
 ````
 
@@ -14,15 +14,15 @@ npm install json-to-react
 
 import jsonToReact from 'json-to-react'
 
-````
-<div>
-  {jsonToReact(json)}
-</div>
+````html
+<JsonToReact
+  json={json}
+/>
 ````
 
-## Cusomization
+## Customization
 
-````
+````json
 const styles = {
   value: {
     color: 'rgb(0,255,0)'
@@ -38,8 +38,11 @@ const styles = {
   parent: {
   }
 }
+````
 
-<div>
-  {jsonToReact(json, styles)}
-</div>
+````html
+<JsonToReact
+  json={json}
+  jsonStyle={jsonStyles}
+/>
 ````

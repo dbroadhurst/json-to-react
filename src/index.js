@@ -72,4 +72,12 @@ const jsonToReact = (json, _styles = defaultStyles) => {
   return scan('root', json)
 }
 
-export default jsonToReact
+const JsonToReact = (props) => {
+  return (
+      <div>
+        {jsonToReact(props.json, props.jsonStyle)}
+      </div>
+  )
+}
+
+export default JsonToReact
