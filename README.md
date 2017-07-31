@@ -12,17 +12,19 @@ npm install json-to-react
 
 ## Usage
 
-import jsonToReact from 'json-to-react'
+````javascript
+import JsonToReact from 'json-to-react'
 
-````html
 <JsonToReact
   json={json}
 />
 ````
 
-## Customization
+## Customize Styles
 
 ````javascript
+import JsonToReact from 'json-to-react'
+
 const jsonStyles = {
   value: {
     color: 'rgb(0,255,0)'
@@ -38,9 +40,6 @@ const jsonStyles = {
   parent: {
   }
 }
-````
-
-````html
 <JsonToReact
   json={json}
   jsonStyle={jsonStyles}
