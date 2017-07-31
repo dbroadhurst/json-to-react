@@ -22,7 +22,7 @@ import jsonToReact from 'json-to-react'
 
 ## Customization
 
-````json
+````javascript
 const styles = {
   value: {
     color: 'rgb(0,255,0)'
