@@ -1,6 +1,6 @@
 {
   "name": "json-to-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "json to react render",
   "homepage": "https://github.com/dbroadhurst/json-to-react",
   "main": "dist/index.js",
